@@ -15,16 +15,12 @@ public class Square{
 	}
 	
 	public double perimeter(){
-		//adjusted this, as the the wrong distances were being used before
-		double p = a.distance(b) + b.distance(d) + d.distance(c) + c.distance(a);
+		double p = a.distance(b) + b.distance(c) + c.distance(d) + d.distance(a);
 		return p;
 	}
 	
 	public double area(){
-		//updated to remove the errors my ide was showing
-		double myArea;
-		myArea = a.distance(b) * a.distance(b);
-		return myArea;
+		double a = a.distance(b) * a.distance(b);
+		return a;
 	}
 }
-
